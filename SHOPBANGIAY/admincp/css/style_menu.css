@@ -1,0 +1,27 @@
+.container_menu {
+    border: 2px solid #333; /* Set your desired border color */
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container_menu li {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    margin: 0;
+    align-items: center ;
+}
+
+.container_menu li:hover {
+    background-color: #555;
+}
+
+.container_menu a {
+    text-decoration: none;
+}

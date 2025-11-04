@@ -1,0 +1,45 @@
+body {
+    background-color:#DDDDDD;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_admin {
+    background-color: #333;
+    height: 80px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-admin {
+    display: flex;
+}
+
+.menu-admin {
+    flex: 1; /* Take 1 part out of 5 */
+    background-color: #333; /* Set your desired background color */
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    height: 3000px;
+}
+
+.content-admin {
+    flex: 4; /* Take 4 parts out of 5 */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    border: 1px solid #000;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}

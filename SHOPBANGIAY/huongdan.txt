@@ -1,0 +1,1 @@
+Vào admincp -> mở nike.sql -> copy post lên mySQL

@@ -1,0 +1,481 @@
+.banner img {
+    width: 100%;
+}
+
+/* about  */
+
+.about {
+    padding: 60px 0 30px 0;
+}
+
+.about-left h2 {
+    padding: 10px 0 20px 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #B4B4B4;
+}
+
+.about-left h1 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #295BAE;
+    padding-bottom: 30px;
+}
+
+.about-left p {
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+
+}
+.about-left-statistical .row {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.about-left-statistical {
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap; 
+}
+
+.about-left-statistical div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.about-left-statistical h1 {
+    font-weight: 700;
+    font-size: 80px;
+    padding-bottom: 0px;
+}
+
+/* MEDIA QUERY CHO MOBILE */
+@media (max-width: 620px) {
+    .about-left-statistical .row {
+        justify-content: center; /* Căn giữa nếu không đủ chỗ */
+        gap: 10px;
+    }
+
+    .about-left-statistical .col-md-6 {
+        min-width: 130px; /* Thu nhỏ nhưng vẫn đủ hiển thị */
+    }
+
+    .about-left-statistical h1 {
+        font-size: 50px; /* Giảm kích thước chữ trên mobile */
+    }
+
+    .about-left-statistical .number-text {
+        font-size: 14px; /* Giảm kích thước chữ mô tả */
+    }
+}
+
+
+
+
+.about .number {
+    margin-bottom: 20px;
+    font-size: 80px;
+    font-weight: bold;
+    color: #1E52C1; /* Màu xanh */
+    position: relative;
+    display: inline-block;
+}
+.about .number::after {
+    content: "";
+    position: absolute;
+    bottom: 9px; /* Điều chỉnh vị trí thanh vàng */
+    left: 0;
+    width: 100%;
+    height: 15px; /* Độ dày thanh */
+    background-color: #FFE700; /* Màu vàng */
+    z-index: -1;
+}
+
+.number-text {
+    font-weight: 400;
+    font-size: 18px !important;
+    padding-bottom: 10px !important;
+    color: #333333;
+}
+
+
+
+.about-right img {
+    width: 100%;
+}
+
+/* product  */
+
+.product {
+    padding: 50px 0;
+}
+
+.product-title-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.product-title-right a {
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.product-title-right div {
+    padding: 10px 20px;
+    border: 1px solid #295BAE;
+    color: #295BAE;
+}
+
+.product-title-right a:hover div {
+
+    padding: 10px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #295BAE;
+    color: #ffffff;
+}
+
+
+.product-list a {
+    text-decoration: none;
+    color: #295BAE;
+}
+
+.product-card img {
+    height: 280px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.product-card h1 {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.product-card p {
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+}
+
+/* Enhanced styling for product price tags */
+.product-card .badge {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product-card .bg-success-subtle {
+    background-color: rgba(25, 135, 84, 0.1) !important;
+}
+
+.product-card .text-success {
+    color: #15803d !important;
+}
+
+.product-card .border-success {
+    border-color: rgba(25, 135, 84, 0.3) !important;
+    border-width: 1.5px !important;
+}
+
+.product-card .badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Price format with currency symbol */
+.product-card .price-amount {
+    position: relative;
+    font-weight: 700;
+}
+
+/* Price styling from product page */
+.product-price {
+    font-weight: 700;
+    color: #e74c3c;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #fff8f8 0%, #fff 100%);
+    border-left: 4px solid #e74c3c;
+    box-shadow: 0 2px 5px rgba(231, 76, 60, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.product-price::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-price-currency {
+    font-size: 14px;
+    color: #7f8c8d;
+    font-weight: 400;
+    margin-left: 4px;
+    position: relative;
+    top: -1px;
+}
+
+a:hover .product-price {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.2);
+    background: linear-gradient(135deg, #fff0f0 0%, #fff 100%);
+}
+
+a:hover .product-price::before {
+    opacity: 1;
+}
+
+/* Responsive adjustments for price tags */
+@media (max-width: 768px) {
+    .product-card .badge {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Thêm style cho badge giảm giá ở góc phải trên, màu đỏ */
+.product-card {
+    position: relative;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding: 12px 10px 16px 10px;
+    background: #fff;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.product-card:hover {
+    border-color: #e53935;
+    box-shadow: 0 4px 16px rgba(229,57,53,0.08);
+}
+.product-discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e5dddd;
+    color: #ef1212;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 15px;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.08);
+}
+@media (max-width: 620px) {
+    .product-discount {
+        font-size: 13px;
+        padding: 3px 8px;
+        top: 6px;
+        right: 6px;
+    }
+}
+
+/* Tên sản phẩm màu đen */
+.product-card .product-title {
+    color: #111;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+/* Đã bán màu đen */
+.product-card .product-meta {
+    color: #111;
+    font-size: 13px;
+    margin-top: 4px;
+    text-align: left;
+}
+
+/* Đảm bảo các sản phẩm có chiều cao bằng nhau trong product-list */
+.product-list .col-6,
+.product-list .col-md-3 {
+    display: flex;
+    align-items: stretch;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 410px; /* hoặc điều chỉnh phù hợp với layout của bạn */
+}
+.product-card .product-title {
+    min-height: 40px; /* Đảm bảo vùng tên sản phẩm đủ cao cho tên dài */
+    display: flex;
+    align-items: flex-start;
+}
+
+/* certifications  */
+.certifications {
+    background-image: var(--commit-bg-image-certifications);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.certifications .about-left h2 {
+    color: #000000;
+}
+
+.certifications-img {
+    height: 437px;
+}
+
+.certifications-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.certifications .swiper-slide {
+    /* width: 100% !important; */
+    height: 437px;
+}
+
+.certifications .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* projects  */
+
+.projects {
+    padding: 50px 0;
+}
+
+
+.projects .swiper-slide img {
+    height: 350px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.projects .swiper-slide p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    padding-bottom: 10px;
+}
+
+.projects .swiper-slide h1 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+}
+
+
+/* market  */
+.market {
+    padding: 50px 0;
+}
+
+.market-img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Chia thành 5 cột bằng nhau */
+    gap: 10px;
+    /* Khoảng cách giữa các cột */
+}
+
+.market-img img {
+    height: 100%;
+    width: 100%;
+}
+
+/* news  */
+
+/* .news-list-left {} */
+.news {
+    padding: 50px 0;
+}
+
+.news-list a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.news-list-left img {
+    height: 340px;
+    width: 100%;
+    padding-bottom: 12px;
+
+}
+
+.news-list-left h1 {
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+
+.news-list-left p {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.news-list-right div {
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.news-list-right img {
+    height: 150px;
+}
+
+.news-list-right h2 {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+
+
+@media (max-width: 620px) {
+ 
+
+    .product-card {
+        padding-bottom: 20px;
+    }
+
+    .market-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .news-list-left {
+        padding-bottom: 24px;
+    }
+
+
+   
+
+    .number-text {
+        font-size: 12px;
+    } 
+}

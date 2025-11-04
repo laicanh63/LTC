@@ -1,0 +1,48 @@
+   .product1 {
+    list-style-type: none;
+    padding: 0;
+    display: grid; /* Sử dụng Grid để xếp hàng ngang */
+    grid-template-columns: repeat(5, 1fr); /* Hiển thị 2 sản phẩm trên mỗi dòng */
+}
+.product_list1 {
+    
+    margin: 9px;
+    list-style: none; /* Loại bỏ dấu đầu dòng của danh sách */
+    display: flex; /* Sử dụng flexbox để xếp hàng ngang */
+    padding: 0; /* Loại bỏ padding mặc định của danh sách */
+    flex-wrap: wrap; /* Cho phép các thẻ li xuống dòng khi không đủ không gian */
+}
+.image-frame1 {
+    border: 2px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #EEE;
+    box-sizing: border-box;
+    margin-top: 17px;
+    box-sizing: border-box; /* Để tính padding và border vào kích thước tổng */
+}
+
+.image-frame1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-frame1 img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    height: 300px;
+}
+
+.image-frame1:hover img {
+    transform: scale(1.039);
+}
+
+.price_product1:hover {
+    color: red;
+}
+
+.title_product1 {
+    margin-top: px;
+}
+
